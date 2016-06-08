@@ -10,10 +10,10 @@ snake.move();
 // fruit.draw();
 snake.eat();
 var directionChangeAllowed = true;
-document.onkeydown = function(e) {			//controlling by keyboard
+window.onkeydown = function(e) {			//controlling by keyboard
 	if (directionChangeAllowed) {			//check if changing direction is possible
 		var kod = e.keyCode;				//kod is key code of e function
-		//console.log(kod);
+		console.log(kod);
 		if (kod === 38) {					// up arrow
 			if (snake.direction !==  'down') {	//when is going down changing direction to up is forbiden and function do nothing
 				snake.direction = "up";
